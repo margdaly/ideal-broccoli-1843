@@ -9,7 +9,7 @@
       <p>Plants: </p>
       <% plot.plants.each do |plant| %>
         <div id="plant-<%= plant.id %>">
-        <li><%= plant.name %>  <%= link_to "Remove Plant", plot_plant_path(plot, plant), method: :delete %></li>
+        <li><%= plant.name %>  <%= link_to "Remove #{plant.name}", plot_plant_path(plot, plant), method: :delete %></li>
         </div>
         <br>
       <% end %>
